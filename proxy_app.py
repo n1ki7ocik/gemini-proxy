@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 GOOGLE_API_KEY = os.environ.get('GEMINI_API_KEY')
-MODEL_NAME = 'gemini-2.5-flash' 
+MODEL_NAME = 'gemini-flash-lite-latest' 
 
 @app.route('/generate', methods=['POST'])
 def generate():
